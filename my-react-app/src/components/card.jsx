@@ -1,10 +1,11 @@
 import React from 'react'
 import './card.css'
-function Card() {
+function Card(props) {
   return (
     <div className='card'>
-        <h3>Jiya Khan Pathan </h3>
-        <p>learning React and making apps and websites for fun!</p>
+        <img src={props.imgSrc} alt="profile" className='profile-img'/>
+       <h3 className='name'>{props.title}</h3>
+       <p className='bio'>{props.desc}</p>
     </div>
   )
 }
